@@ -1,12 +1,85 @@
-:root{
-  --Dark Blue: hsl(240, 38%, 20%);
-  --Grayish Blue: hsl(240, 18%, 77%);
+:root {
+  --Dark-Blue: hsl(240, 38%, 20%);
+  --Grayish-Blue: hsl(240, 18%, 77%);
 }
 
-body{
-  font-family: 'Inter', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  padding-top: 20px;
+  font-family: "Inter", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
 }
 
 .none {
   display: none;
+}
+
+.image-container {
+  height: 340px;
+  margin: 0 20px;
+  margin-bottom: 0;
+  background-image: url(../images/pattern-bg.svg);
+  background-size: 100% 92%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  border-radius: 10px;
+  width: 255px;
+  box-shadow: 0px 20px 20px 0px #00000070;
+}
+
+.button-container {
+  background: white;
+  margin-top: -5%;
+  height: 40px;
+  padding: 0px;
+  width: 80px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+}
+
+.button {
+  background: white;
+  outline: none;
+  border: none;
+  width: 50%;
+  cursor: pointer;
+}
+
+.text-container {
+  background-image: url(../images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: var(--Dark-Blue);
+  background-size: 17%;
+  padding: 30px;
+  text-align: center;
+}
+
+.text-container p {
+  margin-bottom: 30px;
+}
+
+.text-container h1 {
+  font-size: 1rem;
+}
+.text-container h2 {
+  font-size: 0.7rem;
+  color: var(--Grayish-Blue);
 }

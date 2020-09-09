@@ -4,16 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link
+      rel="shortcut icon"
+      href="images/pattern-bg.svg"
+      type="image/x-icon"
+    />
     <title>Coding Bootcamp Testimonials Slider</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" media="(min-width: 760px)" href="css/desktop.css" />
   </head>
   <body>
     <main>
+      <figure class="image-container">
+        <img class="image" src="images/image-tanya.jpg" alt="" />
+        <img class="image none" src="images/image-john.jpg" alt="" />
+        <div class="button-container">
+          <button class="button" id="button-left" onclick="changeSlide();">
+            <img src="images/icon-prev.svg" alt="" />
+          </button>
+          <button class="button" id="button-right">
+            <img src="images/icon-next.svg" alt="" onclick="changeSlide();" />
+          </button>
+        </div>
+      </figure>
       <div class="text-container">
         <p>
           “ I’ve been interested in coding for a while but never taken the jump,
@@ -32,18 +49,6 @@
         <h1>John Tarkpor</h1>
         <h2>Junior Front-end Developer</h2>
       </div>
-      <figure class="image-container">
-        <img class="image" src="images/image-tanya.jpg" alt="" />
-        <img class="image none" src="images/image-john.jpg" alt="" />
-        <div class="button-container">
-          <button class="button" id="button-left" onclick="changeSlide();">
-            <img src="images/icon-prev.svg" alt="" />
-          </button>
-          <button class="button" id="button-right">
-            <img src="images/icon-next.svg" alt="" onclick="changeSlide();" />
-          </button>
-        </div>
-      </figure>
     </main>
     <script src="scripts/index.js"></script>
   </body>
