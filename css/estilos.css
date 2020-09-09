@@ -13,7 +13,7 @@ main {
   padding-top: 20px;
   font-family: "Inter", sans-serif;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(../images/pattern-curve.svg);
   background-repeat: no-repeat;
   background-position: bottom;

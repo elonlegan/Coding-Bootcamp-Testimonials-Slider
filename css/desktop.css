@@ -1,3 +1,51 @@
-body {
-  background-color: red;
+main {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  background-size: 50%;
+  background-position: bottom left;
+}
+
+.text-container {
+  font-size: 2rem;
+  width: 500px;
+  text-align: left;
+  background-position-x: 130px;
+  padding-top: 40px;
+}
+
+.text-container p {
+  width: 660px;
+}
+
+.text-container h1 {
+  display: inline;
+  font-size: 1.25rem;
+}
+
+.text-container h2 {
+  display: inline;
+  font-size: 1.25rem;
+}
+
+.image-container {
+  width: 700px;
+  height: unset;
+  padding: 50px;
+  background-size: 100% 100%;
+}
+
+.image {
+  height: 90%;
+  width: 100%;
+}
+
+.button-container {
+  border-radius: 30px;
+  margin-left: -50%;
+  width: 120px;
+  height: 60px;
 }
